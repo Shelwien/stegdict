@@ -10,7 +10,7 @@ To compile:
 > g++ -m64 -O3 -s stegdict.cpp -ILib -o stegdict
 
 To use: 
-> Encode: stegdict c input_dict output_dict payload
+> Encode: stegdict c input_dict output_dict payload  
 > Decode: stegdict d input_dict sorted_dict payload.unp
  
 Contacts: shelwien.san@gmail.com
