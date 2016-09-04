@@ -2,10 +2,6 @@
 template< int rc_ProcMode >
 struct Rangecoder_SH1m128 : Coroutine {
 
-  typedef unsigned __int128 hword;
-  qword muldivR( qword a, qword b ) { return (hword(a)*b)/(hword(range)+1); }
-  qword mulRdiv( qword a, qword c ) { return (hword(a)*(hword(range)+1))/c; }
-
   enum {
     SCALElog = 15,
     SCALE    = 1<<SCALElog
@@ -30,7 +26,12 @@ struct Rangecoder_SH1m128 : Coroutine {
   uint FFNum;
   uint Cache;
 
-/*
+#ifdef __GNUC__
+  typedef unsigned __int128 hword;
+  qword muldivR( qword a, qword b ) { return (hword(a)*b)/(hword(range)+1); }
+  qword mulRdiv( qword a, qword c ) { return (hword(a)*(hword(range)+1))/c; }
+#else
+
   qword muldivR( qword a, qword b ) {
     qword x, r = qword(range)+1;
     __asm__ ("\
@@ -59,7 +60,8 @@ struct Rangecoder_SH1m128 : Coroutine {
     );
     return x;
   }
-*/
+#endif
+
   void rc_Process( qword cumFreq, qword freq, qword totFreq ) {
     qword tmp = mulRdiv( cumFreq, totFreq ) + 1;
     if( rc_ProcMode ) code-=tmp; else {
@@ -126,27 +128,31 @@ struct Rangecoder_SH1m128 : Coroutine {
       uint i, n = NUM;
 
       // cache .. FF x FFNum .. low
-      qword llow=low;
-      qword high=llow+range+1;
+      qword high=low+range,High=(high<low),tmp=high; high++; High|=(high<tmp);
+      qword llow=low+range/2; Carry|=(llow<low);
       qword mask,nmask,nlow;
 
-      mask=0xFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFFFFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFFFFFFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFFFFFFFFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
-      mask=0xFFFFFFFFFFFFFFFFU; nlow=llow|mask; if( nlow<high ) llow=nlow,n--;
+      mask=0xFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFFFFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFFFFFFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFFFFFFFFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
+      mask=0xFFFFFFFFFFFFFFFFU; nlow=llow|mask; if( (Carry<High) || (nlow<high) ) llow=nlow,n--;
 
       low = llow;
       if( low==0xFFFFFFFFFFFFFFFFU ) FFNum=0; // they're also FFs
 
-      if( Cache!=-1 ) put( Cache );
-      for( i=0; i<FFNum; i++ ) put( 0xFF );
+//printf( "Carry=%I64X\n", Carry );
+//printf( "%02X %i %016I64X\n", Cache+Carry, FFNum+Carry, low );
+//printf( "%02X %i %016I64X\n", Cache+High, FFNum+High, high );
+
+      if( Cache!=-1 ) put( Cache+Carry );
+      for( i=0; i<FFNum; i++ ) put( 0xFF+Carry );
       for( i=0; i<n; i++ ) put( low>>MSByte ), low<<=8;
 
-//      qword old=low; low+=range-1; if( low<old ) Carry++;
+//      qword old=low; low+=range; if( low<old ) Carry++;
 //      for( i=0; i<n+1; i++ ) ShiftLow();
     }
   } // quit

@@ -8,7 +8,7 @@ struct idx_tree {
 
   uint Init( uint _N ) {
     uint i,r=0;
-    N = _N;
+    N = _N+1;
     L2N = log2i(N);
     idxSize = ((1<<L2N)+(N>>1));
     idx = new uint[idxSize]; // plain 
@@ -30,6 +30,9 @@ struct idx_tree {
   // reduced to full index
   uint Lookup( uint i ) {
     uint j,b,x;
+
+//for( j=1; j<idxSize; j++ ) printf( "%i ", idx[j] ); printf( "\n" );
+
     for( j=L2N,x=1; j!=-1; j-- ) {
       b = (i>=idx[x]) ? i-=idx[x],1 : 0;
       x += x+b;
