@@ -35,12 +35,7 @@ int main( int argc, char** argv ) {
   uint f_len = flen(f);
   byte* p = new byte[f_len]; if( p==0 ) return 5;
   f_len = fread( p, 1,f_len, f );
-//printf( "f_len=%i\n", f_len );
-/*
-  f_DEC ?
-  D.Init(p,f_len),D.processfile( 0, h ) :
-  C.Init(p,f_len),C.processfile( h, g ); 
-*/
+
   if( f_DEC==0 ) {
     C.Init(p,f_len); C.processfile( h, g );
   } else {
