@@ -1,4 +1,22 @@
 
+#if (defined __GNUC__) || (!defined X64)
+  #ifdef X64
+  // if __int128 available, just use it
+  typedef unsigned __int128 hword;
+  static qword muldivR( qword a, qword b, qword range ) { return (hword(a)*b)/(hword(range)+1); }
+  static qword mulRdiv( qword a, qword c, qword range ) { return (hword(a)*(hword(range)+1))/c; }
+  #else
+  // if there's no __int128 and no x64 asm support, then use this
+  #include "muldiv_x86.inc"
+  #endif
+#else
+  #ifdef X64
+  // if __int128 isn't available, use x64 asm
+  #include "muldiv_x64_asm.inc"
+  #else
+  #endif
+#endif
+
 template< int rc_ProcMode >
 struct Rangecoder_SH1m128 : Coroutine {
 
@@ -26,49 +44,14 @@ struct Rangecoder_SH1m128 : Coroutine {
   uint FFNum;
   uint Cache;
 
-#ifdef __GNUC__
-  typedef unsigned __int128 hword;
-  qword muldivR( qword a, qword b ) { return (hword(a)*b)/(hword(range)+1); }
-  qword mulRdiv( qword a, qword c ) { return (hword(a)*(hword(range)+1))/c; }
-#else
-
-  qword muldivR( qword a, qword b ) {
-    qword x, r = qword(range)+1;
-    __asm__ ("\
-    movq %1,%%rax; \
-    mulq %2; \
-    cmpq $0,%3; \
-    jz   1f;  \
-    divq %3; \
-    xchg %%rax,%%rdx; \
-1:  movq %%rdx,%0; \
-    " : "=rm"(x) : "rm"(a),"rm"(b),"rm"(r) : "rax","rdx"
-    );
-    return x;
-  }
-
-  qword mulRdiv( qword a, qword c ) {
-    qword x;
-    __asm__ ("\
-    movq %1,%%rax; \
-    mulq %3; \
-    addq %1,%%rax; \
-    adcq $0,%%rdx; \
-    divq %2; \
-    movq %%rax,%0; \
-    " : "=rm"(x) : "rm"(a),"rm"(c),"rm"(range) : "rax","rdx"
-    );
-    return x;
-  }
-#endif
 
   void rc_Process( qword cumFreq, qword freq, qword totFreq ) {
-    qword tmp = mulRdiv( cumFreq, totFreq ) + 1;
+    qword tmp = mulRdiv(cumFreq,totFreq,range) + 1;
     if( rc_ProcMode ) code-=tmp; else {
       //lowc+=tmp;
       qword old=low; low+=tmp; if( low<old ) Carry++;
     }
-    range = mulRdiv( cumFreq+freq, totFreq )-1 - tmp;
+    range = mulRdiv(cumFreq+freq,totFreq,range)-1 - tmp;
     if( rc_ProcMode ) 
       while( range<sTOP ) {
         range = (range<<8)+0xFF;
@@ -83,7 +66,7 @@ struct Rangecoder_SH1m128 : Coroutine {
   void rc_Arrange( qword totFreq ) {}
 
   qword rc_GetFreq( qword totFreq ) {
-    return muldivR( code, totFreq );
+    return muldivR(code,totFreq,range);
   }
 
 

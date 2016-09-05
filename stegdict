@@ -1,0 +1,983 @@
+#define _WSTRING_DEFINED 
+#define _CRT_INSECURE_DEPRECATE_MEMORY(_Replacement) 
+#define __DBL_MIN_EXP__ (-1021)
+#define __cpp_attributes 200809
+#define _MCRTIMP _CRTIMP
+#define _CONST_RETURN 
+#define _GLIBCXX98_USE_C99_MATH 1
+#define _IOSTRG 0x0040
+#define __UINT_LEAST16_MAX__ 0xffff
+#define _INTPTR_T_DEFINED 
+#define __ATOMIC_ACQUIRE 2
+#define __MINGW_GNU_PRINTF(__format,__args) __attribute__((__format__(gnu_printf,__format,__args)))
+#define __FLT_MIN__ 1.17549435082228750797e-38F
+#define __GCC_IEC_559_COMPLEX 2
+#define __cpp_aggregate_nsdmi 201304
+#define _NLSCMP_DEFINED 
+#define __UINT_LEAST8_TYPE__ unsigned char
+#define __SIZEOF_FLOAT80__ 16
+#define _CRT_ERRNO_DEFINED 
+#define restrict __restrict
+#define _I8_MIN (-127 - 1)
+#define _GLIBCXX_HAVE_STDALIGN_H 1
+#define _GLIBCXX_HAVE_SLEEP 1
+#define __MINGW64_VERSION_MAJOR 5
+#define _WIN32 1
+#define __INTMAX_C(c) c ## LL
+#define _GLIBCXX_TXN_SAFE_DYN 
+#define _fmode (* __MINGW_IMP_SYMBOL(_fmode))
+#define __CHAR_BIT__ 8
+#define DUMMYUNIONNAME6 
+#define popen _popen
+#define SHRT_MAX __SHRT_MAX__
+#define __MINGW64_VERSION_RC 0
+#define __UINT8_MAX__ 0xff
+#define _WIN64 1
+#define _FILE_DEFINED 
+#define _GLIBCXX_PSEUDO_VISIBILITY_default 
+#define __WINT_MAX__ 0xffff
+#define _WCTYPE_T_DEFINED 
+#define _GLIBCXX_END_NAMESPACE_LDBL 
+#define __MINGW_IMPORT extern __attribute__ ((__dllimport__))
+#define stderr (&__iob_func()[2])
+#define USE___UUIDOF 0
+#define _OUT_TO_MSGBOX 2
+#define __cpp_static_assert 200410
+#define _mm_malloc(a,b) _aligned_malloc(a,b)
+#define _GLIBCXX_USE_WEAK_REF __GXX_WEAK__
+#define __ORDER_LITTLE_ENDIAN__ 1234
+#define __SIZE_MAX__ 0xffffffffffffffffULL
+#define DUMMYUNIONNAME1 
+#define DUMMYUNIONNAME2 
+#define DUMMYUNIONNAME3 
+#define DUMMYUNIONNAME4 
+#define DUMMYUNIONNAME5 
+#define __WCHAR_MAX__ 0xffff
+#define DUMMYUNIONNAME7 
+#define DUMMYUNIONNAME8 
+#define DUMMYUNIONNAME9 
+#define _MM_MALLOC_H_INCLUDED 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_2_0(__ret,__func,__type1,__arg1,__type2,__arg2,__dsttype,__dst) 
+#define _GLIBCXX_USE_LONG_LONG 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1
+#define __DBL_DENORM_MIN__ double(4.94065645841246544177e-324L)
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
+#define __GCC_ATOMIC_CHAR_LOCK_FREE 2
+#define __MINGW_MSVC2005_DEPREC_STR "This POSIX function is deprecated beginning in Visual C++ 2005, use _CRT_NONSTDC_NO_DEPRECATE to disable deprecation"
+#define __GCC_IEC_559 2
+#define _IOFBF 0x0000
+#define __nothrow __declspec(nothrow)
+#define __FLT_EVAL_METHOD__ 0
+#define SHRT_MIN (-SHRT_MAX - 1)
+#define _GLIBCXX_HAVE_FMODF 1
+#define _GLIBCXX_PSEUDO_VISIBILITY(V) _GLIBCXX_PSEUDO_VISIBILITY_ ## V
+#define _GLIBCXX_HAVE_FMODL 1
+#define _GLIBCXX_HAVE_SYS_STAT_H 1
+#define __cpp_binary_literals 201304
+#define _GLIBCXX_HAVE_ENOTSUP 1
+#define longjmp my_jmp
+#define SSIZE_MAX _I64_MAX
+#define _WINT_T 
+#define _GLIBCXX_SYNCHRONIZATION_HAPPENS_AFTER(A) 
+#define _GLIBCXX_CXX_CONFIG_H 1
+#define _GLIBCXX_PACKAGE_NAME "package-unused"
+#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
+#define __x86_64 1
+#define _WSPAWN_DEFINED 
+#define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 0
+#define AlignUp(x,r) ((x)+((r)-1))/(r)*(r)
+#define __cpp_variadic_templates 200704
+#define _GLIBCXX_USE_C99_COMPLEX_TR1 1
+#define __UINT_FAST64_MAX__ 0xffffffffffffffffULL
+#define __SIG_ATOMIC_TYPE__ int
+#define _DLL 
+#define __MINGW_ATTRIB_CONST __attribute__ ((__const__))
+#define __DBL_MIN_10_EXP__ (-307)
+#define __FINITE_MATH_ONLY__ 0
+#define __cpp_variable_templates 201304
+#define _DIV_T_DEFINED 
+#define _SECURECRT_FILL_BUFFER_PATTERN 0xFD
+#define _GLIBCXX_HAVE_FABSL 1
+#define __STDDEF_H__ 
+#define ___mb_cur_max_func() (__mb_cur_max)
+#define __MINGW_GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)
+#define __MINGW_USE_UNDERSCORE_PREFIX 0
+#define __MINGW_ATTRIB_USED __attribute__ ((__used__))
+#define __GNUC_PATCHLEVEL__ 0
+#define _GLIBCXX_STD_A std
+#define _GLIBCXX_STD_C std
+#define __MINGW_SEC_WARN_STR "This function or variable may be unsafe, use _CRT_SECURE_NO_WARNINGS to disable deprecation"
+#define _GLIBCXX_BEGIN_NAMESPACE_VERSION 
+#define _ADDRESSOF(v) (&reinterpret_cast<const char &>(v))
+#define __UINT_FAST8_MAX__ 0xff
+#define PATH_MAX 260
+#define _INC_MINGW_SECAPI 
+#define _LIMITS_H___ 
+#define _HEAPOK (-2)
+#define __has_include(STR) __has_include__(STR)
+#define _GLIBCXX_HAVE_FREXPF 1
+#define _GLIBCXX_HAVE_FREXPL 1
+#define _stdcall __attribute__((__stdcall__))
+#define __DEC64_MAX_EXP__ 385
+#define _WCHAR_T_DEFINED 
+#define _GLIBCXX_PURE __attribute__ ((__pure__))
+#define _GLIBCXX_HAVE_STDINT_H 1
+#define __INT8_C(c) c
+#define _CRT_OBSOLETE(_NewItem) 
+#define onexit_t _onexit_t
+#define _GLIBCXX_HAVE_COSHF 1
+#define _GLIBCXX_HAVE_COSHL 1
+#define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
+#define __LONG32 long
+#define NOINLINE __attribute__((noinline))
+#define __SHRT_MAX__ 0x7fff
+#define __LDBL_MAX__ 1.18973149535723176502e+4932L
+#define _GLIBCXX_USE_C99_COMPLEX _GLIBCXX11_USE_C99_COMPLEX
+#define _crt_va_copy(d,s) __builtin_va_copy(d,s)
+#define _GLIBCXX_CPU_DEFINES 1
+#define _GLIBCXX_USE_C99_STDIO _GLIBCXX11_USE_C99_STDIO
+#define _pgmptr (* __MINGW_IMP_SYMBOL(_pgmptr))
+#define _GLIBCXX_HAVE_FLOAT_H 1
+#define SCHAR_MAX __SCHAR_MAX__
+#define __UINT_LEAST8_MAX__ 0xff
+#define __GCC_ATOMIC_BOOL_LOCK_FREE 2
+#define _GLIBCXX_HAVE_EOWNERDEAD 1
+#define _GLIBCXX_HAVE_MODF 1
+#define _GLIBCXX_HAVE_ATANF 1
+#define _GLIBCXX_HAVE_ATANL 1
+#define __UINTMAX_TYPE__ long long unsigned int
+#define X64flag 1
+#define _CRT_MEMORY_DEFINED 
+#define _getc_nolock(_stream) _fgetc_nolock(_stream)
+#define _GLIBCXX_OS_DEFINES 
+#define __uuidof(type) __mingw_uuidof<__typeof(type)>()
+#define __DEC32_EPSILON__ 1E-6DF
+#define __OPTIMIZE__ 1
+#define ULONG_LONG_MAX (LONG_LONG_MAX * 2ULL + 1ULL)
+#define _GLIBCXX_HAVE_SYS_TIME_H 1
+#define _CRT_ABS_DEFINED 
+#define _CRT_ALIGN(x) __attribute__ ((__aligned__ (x)))
+#define _GLIBCXX_STDIO_SEEK_END 2
+#define _INC_STRING 
+#define __MINGW_MS_SCANF(__format,__args) __attribute__((__format__(ms_scanf, __format,__args)))
+#define __UINT32_MAX__ 0xffffffffU
+#define __GXX_EXPERIMENTAL_CXX0X__ 1
+#define _REPORT_ERRMODE 3
+#define _GLIBCXX_HAVE_SINCOSL 1
+#define __core2__ 1
+#define _GLIBCXX98_USE_C99_COMPLEX 1
+#define _GLIBCXX_SYMVER 1
+#define __MINGW_ATTRIB_UNUSED __attribute__ ((__unused__))
+#define _GLIBCXX_FULLY_DYNAMIC_STRING 1
+#define __LDBL_MAX_EXP__ 16384
+#define _GLIBCXX_HAVE_STRTOLD 1
+#define _GLIBCXX_END_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_END_NAMESPACE_CXX11
+#define __glibcxx_assert(_Condition) 
+#define INC_LOG2I 
+#define __WINT_MIN__ 0
+#define __mingw_ovr static __attribute__ ((__unused__)) __inline__ __cdecl
+#define _environ (* __MINGW_IMP_SYMBOL(_environ))
+#define SCHAR_MIN (-SCHAR_MAX - 1)
+#define EXIT_FAILURE 1
+#define _FPOS_T_DEFINED 
+#define __SCHAR_MAX__ 0x7f
+#define _CRT_WSYSTEM_DEFINED 
+#define __WCHAR_MIN__ 0
+#define _wpgmptr (* __MINGW_IMP_SYMBOL(_wpgmptr))
+#define __INT64_C(c) c ## LL
+#define _GLIBCXX_CONST __attribute__ ((__const__))
+#define __DBL_DIG__ 15
+#define __GCC_ATOMIC_POINTER_LOCK_FREE 2
+#define _putwc_nolock(_c,_stm) _fputwc_nolock(_c,_stm)
+#define _crt_va_arg(v,l) __builtin_va_arg(v,l)
+#define _TIME_T_DEFINED 
+#define _UINTPTR_T_DEFINED 
+#define _GLIBCXX_HAVE_ATAN2L 1
+#define __SIZEOF_INT__ 4
+#define __SIZEOF_POINTER__ 8
+#define _INC_CRTDEFS_MACRO 
+#define _ANONYMOUS_STRUCT __MINGW_EXTENSION
+#define _INC_STDIO 
+#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
+#define USHRT_MAX (SHRT_MAX * 2 + 1)
+#define __USER_LABEL_PREFIX__ 
+#define _GLIBCXX_NAMESPACE_CXX11 __cxx11::
+#define __C89_NAMELESSSTRUCTNAME1 
+#define __C89_NAMELESSSTRUCTNAME2 
+#define __C89_NAMELESSSTRUCTNAME3 
+#define __C89_NAMELESSSTRUCTNAME4 
+#define __C89_NAMELESSSTRUCTNAME5 
+#define _W64 
+#define _AGLOBAL 
+#define _GLIBCXX_HAVE_TANL 1
+#define _GLIBCXX_USE_C99_FENV_TR1 1
+#define _GLIBCXX_USE_C11_UCHAR_CXX11 1
+#define setjmp my_setjmp
+#define __STDC_HOSTED__ 1
+#define _RSIZE_T_DEFINED 
+#define __WIN32 1
+#define _MAX_ENV 32767
+#define __LDBL_HAS_INFINITY__ 1
+#define _HEAPBADBEGIN (-3)
+#define _WConst_return _CONST_RETURN
+#define _WSTDIO_DEFINED 
+#define __WIN64 1
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_0_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_0(__ret,__func,__dsttype,__dst) 
+#define __FLT_EPSILON__ 1.19209289550781250000e-7F
+#define __GXX_WEAK__ 1
+#define _GLIBCXX_HAVE_ISNANF 1
+#define TMP_MAX 32767
+#define jmp_buf m_jmp_buf
+#define _GLIBCXX_BEGIN_NAMESPACE_ALGO 
+#define __LDBL_MIN__ 3.36210314311209350626e-4932L
+#define __MINGW_ATTRIB_MALLOC __attribute__ ((__malloc__))
+#define __DEC32_MAX__ 9.999999E96DF
+#define _CVTBUFSIZE (309+40)
+#define _UI32_MAX 0xffffffffu
+#define __MINGW32__ 1
+#define _GLIBCXX_STDLIB_H 1
+#define _STDDEF_H 
+#define _MAX_EXT 256
+#define _GLIBCXX_USE_C99_STDLIB _GLIBCXX11_USE_C99_STDLIB
+#define __INT32_MAX__ 0x7fffffff
+#define _CRT_UNUSED(x) (void)x
+#define __SIZEOF_LONG__ 4
+#define _IONBF 0x0004
+#define __C89_NAMELESSSTRUCTNAME 
+#define _GLIBCXX_SYMVER_GNU 1
+#define _INC_STRING_S 
+#define _CRTIMP_NOIA64 _CRTIMP
+#define __UINT16_C(c) c
+#define __MINGW_CRT_NAME_CONCAT2(sym) ::sym ##_s
+#define __MINGW_ATTRIB_DEPRECATED_MSVC2005 __MINGW_ATTRIB_DEPRECATED_STR(__MINGW_MSVC2005_DEPREC_STR)
+#define _GLIBCXX_HAVE_MODFF 1
+#define _GLIBCXX_HAVE_MODFL 1
+#define __DECIMAL_DIG__ 21
+#define _NATIVE_NULLPTR_SUPPORTED 
+#define _GLIBCXX_HAVE_HYPOTF 1
+#define _GLIBCXX_HAVE_HYPOTL 1
+#define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY 0
+#define __has_include_next(STR) __has_include_next__(STR)
+#define _GLIBCXX_USE_LFS 1
+#define _CRT_PERROR_DEFINED 
+#define _osplatform (* __MINGW_IMP_SYMBOL(_osplatform))
+#define _GLIBCXX_HAVE_SYMVER_SYMBOL_RENAMING_RUNTIME_SUPPORT 1
+#define _GLIBCXX_PSEUDO_VISIBILITY_hidden 
+#define _GLIBCXX_HAVE_LOCALE_H 1
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define _ALLOCA_S_HEAP_MARKER 0xDDDD
+#define _GLIBCXX_HAVE_FABSF 1
+#define _INC__MINGW_H 
+#define __w64 
+#define _GLIBCXX_HAVE_POWF 1
+#define _GLIBCXX_HAVE_POWL 1
+#define L_tmpnam (sizeof(_P_tmpdir) + 12)
+#define __GNUC__ 7
+#define getwc(_stm) fgetwc(_stm)
+#define sys_errlist _sys_errlist
+#define _cdecl __attribute__((__cdecl__))
+#define __MMX__ 1
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_3_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3) 
+#define __cpp_delegating_constructors 200604
+#define _HEAPBADPTR (-6)
+#define offsetof(TYPE,MEMBER) __builtin_offsetof (TYPE, MEMBER)
+#define _GLIBCXX98_USE_C99_STDLIB 1
+#define __FLT_HAS_DENORM__ 1
+#define __SIZEOF_LONG_DOUBLE__ 16
+#define _GLIBCXX_HAVE_EWOULDBLOCK 1
+#define __mb_cur_max (* __MINGW_IMP_SYMBOL(__mb_cur_max))
+#define SEEK_CUR 1
+#define __BIGGEST_ALIGNMENT__ 16
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated)
+#define __STDC_UTF_16__ 1
+#define _OFF_T_DEFINED 
+#define __MINGW32_MINOR_VERSION 11
+#define STDERR_FILENO 2
+#define _IOB_ENTRIES 20
+#define _threadid (__threadid())
+#define DUMMYUNIONNAME 
+#define _GLIBCXX_HAVE_WCHAR_H 1
+#define _FPOSOFF(fp) ((long)(fp))
+#define _GLIBCXX_HAVE_S_ISREG 1
+#define __USE_CRTIMP 1
+#define EXIT_SUCCESS 0
+#define _P_NOWAIT 1
+#define _GLIBCXX_USE_DEPRECATED 1
+#define __DBL_MAX__ double(1.79769313486231570815e+308L)
+#define _thiscall __attribute__((__thiscall__))
+#define _GLIBCXX_HAVE_GETS 1
+#define _GLIBCXX_STDIO_SEEK_CUR 1
+#define __cpp_raw_strings 200710
+#define __INT_FAST32_MAX__ 0x7fffffff
+#define __WINNT 1
+#define DUMMYSTRUCTNAME1 
+#define DUMMYSTRUCTNAME2 
+#define DUMMYSTRUCTNAME3 
+#define DUMMYSTRUCTNAME4 
+#define DUMMYSTRUCTNAME5 
+#define __DBL_HAS_INFINITY__ 1
+#define _GLIBCXX_STDIO_EOF -1
+#define _CRT_INSECURE_DEPRECATE_GLOBALS(_Replacement) 
+#define _GLIBCXX_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_NAMESPACE_CXX11
+#define _CRTNOALIAS 
+#define __INT64_MAX__ 0x7fffffffffffffffLL
+#define _GLIBCXX_END_NAMESPACE_ALGO 
+#define _I16_MAX 32767
+#define __WINNT__ 1
+#define stdin (&__iob_func()[0])
+#define __MINGW_HAVE_WIDE_C99_SCANF 1
+#define __DEC32_MIN_EXP__ (-94)
+#define _GLIBCXX_HAVE_UCHAR_H 1
+#define _putc_nolock(_c,_stream) _fputc_nolock(_c,_stream)
+#define _GLIBCXX_HAVE_EPROTO 1
+#define __MINGW_LSYMBOL(sym) _ ##sym
+#define __C89_NAMELESSUNIONNAME1 
+#define __C89_NAMELESSUNIONNAME2 
+#define __C89_NAMELESSUNIONNAME3 
+#define __C89_NAMELESSUNIONNAME4 
+#define __C89_NAMELESSUNIONNAME5 
+#define __C89_NAMELESSUNIONNAME6 
+#define __C89_NAMELESSUNIONNAME7 
+#define __C89_NAMELESSUNIONNAME8 
+#define _INC_STDIO_S 
+#define LONG_MIN (-LONG_MAX - 1L)
+#define _GLIBCXX_HAVE_SINCOSF 1
+#define MINGW_HAS_DDK_H 1
+#define __CRT_INLINE inline
+#define _GLIBCXX_PACKAGE__GLIBCXX_VERSION "version-unused"
+#define __INT_FAST16_TYPE__ short int
+#define _SIZE_T_DEFINED 
+#define _GLIBCXX_HAVE_GETIPINFO 1
+#define putwc(_c,_stm) fputwc(_c,_stm)
+#define _NFILE _NSTREAM_
+#define _fastcall __attribute__((__fastcall__))
+#define __LDBL_HAS_DENORM__ 1
+#define _GLIBCXX11_USE_C99_STDIO 1
+#define __MINGW_HAS_DXSDK 1
+#define __cplusplus 201402L
+#define __cpp_ref_qualifiers 200710
+#define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+#define __INT_LEAST32_MAX__ 0x7fffffff
+#define __DEC32_MIN__ 1E-95DF
+#define INC_FLEN 
+#define __DEPRECATED 1
+#define _I16_MIN (-32767 - 1)
+#define __DBL_MAX_EXP__ 1024
+#define _GLIBCXX_EXTERN_TEMPLATE 1
+#define __C89_NAMELESS __MINGW_EXTENSION
+#define _M_X64 100
+#define __DEC128_EPSILON__ 1E-33DL
+#define _iob __iob_func()
+#define __SSE2_MATH__ 1
+#define __ATOMIC_HLE_RELEASE 131072
+#define __WIN32__ 1
+#define _GLIBCXX_HAVE_ECANCELED 1
+#define __PTRDIFF_MAX__ 0x7fffffffffffffffLL
+#define __MSABI_LONG(x) x ## l
+#define _MAX_WAIT_MALLOC_CRT 60000
+#define __amd64 1
+#define _GLIBCXX_HAVE_ATTRIBUTE_VISIBILITY 0
+#define _GLIBCXX_HAVE__ISNANF 1
+#define _wenviron (* __MINGW_IMP_SYMBOL(_wenviron))
+#define _SYS_OPEN 20
+#define _CRTIMP_ALTERNATIVE _CRTIMP
+#define _UI8_MAX 0xffu
+#define __ATOMIC_HLE_ACQUIRE 65536
+#define __GNUG__ 7
+#define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
+#define __SIZEOF_SIZE_T__ 8
+#define __GLIBCXX__ 20160601
+#define _CRT_glob _dowildcard
+#define _UI64_MAX 0xffffffffffffffffull
+#define __cpp_rvalue_reference 200610
+#define __cpp_nsdmi 200809
+#define SIZE_MAX _UI64_MAX
+#define __SIZEOF_WINT_T__ 2
+#define _INT128_DEFINED 
+#define __cpp_initializer_lists 200806
+#define __CRT_WIDE(_String) L ## _String
+#define _GLIBCXX_HAVE_SYS_PARAM_H 1
+#define __MINGW64_STRINGIFY(x) __STRINGIFY(x)
+#define _TIME64_T_DEFINED 
+#define __cpp_hex_float 201603
+#define __GXX_ABI_VERSION 1010
+#define __FLT_MIN_EXP__ (-125)
+#define _WSTDLIBP_DEFINED 
+#define __MINGW_ATTRIB_NO_OPTIMIZE __attribute__((__optimize__ ("0")))
+#define alloca(x) __builtin_alloca((x))
+#define _GLIBCXX_BEGIN_NAMESPACE_CXX11 namespace __cxx11 {
+#define _GLIBCXX_HAVE_FINITEF 1
+#define _SSIZE_T_DEFINED 
+#define __cpp_lambdas 200907
+#define _GLIBCXX_HAVE_SINHF 1
+#define _GLIBCXX_HAVE_SINHL 1
+#define __MINGW_ATTRIB_DEPRECATED_SEC_WARN __MINGW_ATTRIB_DEPRECATED_STR(__MINGW_SEC_WARN_STR)
+#define __INT_FAST64_TYPE__ long long int
+#define _GLIBCXX_HAVE_SQRTF 1
+#define _GLIBCXX_HAVE_SQRTL 1
+#define _putwchar_nolock(_c) _putwc_nolock((_c),stdout)
+#define _osver (* __MINGW_IMP_SYMBOL(_osver))
+#define __DBL_MIN__ double(2.22507385850720138309e-308L)
+#define _GLIBCXX_HOSTED 1
+#define _CRT_DOUBLE_DEC 
+#define _GLIBCXX14_CONSTEXPR constexpr
+#define __FLT_MIN_10_EXP__ (-37)
+#define _ALLOCA_S_MARKER_SIZE 16
+#define _P_tmpdir "\\"
+#define _ALLOCA_S_STACK_MARKER 0xCCCC
+#define _GLIBCXX_HAVE_STRINGS_H 1
+#define __DECIMAL_BID_FORMAT__ 1
+#define _GLIBCXX_USE_C99_INTTYPES_WCHAR_T_TR1 1
+#define CHAR_MAX SCHAR_MAX
+#define __GXX_TYPEINFO_EQUALITY_INLINE 0
+#define _GLIBCXX_PACKAGE_URL ""
+#define MINGW_DDK_H 
+#define _GLIBCXX_HAVE_ETIMEDOUT 1
+#define ULONG_MAX (LONG_MAX * 2UL + 1UL)
+#define _P_NOWAITO 3
+#define _IOREAD 0x0001
+#define _ALLOCA_S_THRESHOLD 1024
+#define __DEC128_MIN__ 1E-6143DL
+#define _GLIBCXX_ATOMIC_BUILTINS 1
+#define __MINGW_BROKEN_INTERFACE(x) __MINGW_PRAGMA_PARAM(message ("Interface " _CRT_STRINGIZE(x) " has unverified layout."))
+#define __REGISTER_PREFIX__ 
+#define __UINT16_MAX__ 0xffff
+#define _HEAPEND (-5)
+#define __DBL_HAS_DENORM__ 1
+#define _IOMYBUF 0x0008
+#define __cdecl __attribute__((__cdecl__))
+#define CHAR_BIT __CHAR_BIT__
+#define _GLIBCXX_HAVE_SINCOS 1
+#define __UINT8_TYPE__ unsigned char
+#define _GLIBCXX_ABI_TAG_CXX11 __attribute ((__abi_tag__ ("cxx11")))
+#define _CRT_ALTERNATIVE_IMPORTED 
+#define _GLIBCXX_HAVE_ISWBLANK 1
+#define __MINGW_SCANF_FORMAT ms_scanf
+#define LONG_LONG_MAX __LONG_LONG_MAX__
+#define _MRTIMP2 _CRTIMP
+#define CHAR_MIN SCHAR_MIN
+#define __FLT_MANT_DIG__ 24
+#define _GLIBCXX_HAVE_COMPLEX_H 1
+#define __VERSION__ "7.0.0 20160601 (experimental)"
+#define _GLIBCXX11_USE_C99_STDLIB 1
+#define __max(a,b) (((a) > (b)) ? (a) : (b))
+#define _GLIBCXX_HAVE_INT64_T 1
+#define _INC_SWPRINTF_INL 
+#define _GLIBCXX_USE_CONSTEXPR constexpr
+#define __UINT64_C(c) c ## ULL
+#define _PTRDIFF_T_ 
+#define _GLIBCXX_HAVE_TANHF 1
+#define _GLIBCXX_HAVE_TANHL 1
+#define __cpp_unicode_characters 200704
+#define _GLIBCXX_USE_GETTIMEOFDAY 1
+#define _GLIBCXX_USE_DECIMAL_FLOAT 1
+#define _GLIBCXX_HAVE_ENOSPC 1
+#define _GLIBCXX_PACKAGE_BUGREPORT ""
+#define _putchar_nolock(_c) _putc_nolock((_c),stdout)
+#define __int16 short
+#define _INC_CRTDEFS 
+#define __cpp_decltype_auto 201304
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_1(__ret,__func,__dsttype,__dst,__type1,__arg1) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_2(__ret,__func,__dsttype,__dst,__type1,__arg1,__type2,__arg2) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_3(__ret,__func,__dsttype,__dst,__type1,__arg1,__type2,__arg2,__type3,__arg3) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_4(__ret,__func,__dsttype,__dst,__type1,__arg1,__type2,__arg2,__type3,__arg3,__type4,__arg4) 
+#define _GLIBCXX_USE_CXX11_ABI 1
+#define _GLIBCXX_THROW(_EXC) 
+#define _INC_LIMITS 
+#define __GCC_ATOMIC_INT_LOCK_FREE 2
+#define _MAX_PATH 260
+#define WEOF (wint_t)(0xFFFF)
+#define _GLIBCXX_USE_NOEXCEPT noexcept
+#define __int32 int
+#define __wargv (* __MINGW_IMP_SYMBOL(__wargv))
+#define _CRT_ALLOCATION_DEFINED 
+#define __MINGW_MS_PRINTF(__format,__args) __attribute__((__format__(ms_printf, __format,__args)))
+#define _GLIBCXX_BEGIN_NAMESPACE_CONTAINER 
+#define LONG_LONG_MIN (-LONG_LONG_MAX - 1LL)
+#define _HEAPEMPTY (-1)
+#define _GLIBCXX_HAVE_HYPOT 1
+#define _INC_STDLIB_S 
+#define __MINGW_HAVE_ANSI_C99_SCANF 1
+#define _GLIBCXX_HAVE_EPERM 1
+#define __int64 long long
+#define _CRTIMP __attribute__ ((__dllimport__))
+#define _WIN32_WINNT 0x502
+#define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define _STDIO_DEFINED 
+#define _INC_MEMORY 
+#define _GLIBCXX_HAVE_TGMATH_H 1
+#define _GLIBCXX11_USE_C99_COMPLEX 1
+#define __MSVCRT_VERSION__ 0x0700
+#define _STATIC_ASSERT(expr) extern void __static_assert_t(int [(expr)?1:-1])
+#define _PGLOBAL 
+#define _ONEXIT_T_DEFINED 
+#define _CRT_WPERROR_DEFINED 
+#define __MINGW_INTRIN_INLINE extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_0(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_0_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_4(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3,__arg4_type,__arg4) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_4_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2, __arg3_type, __arg3, __arg4_type, __arg4)
+#define _GLIBCXX_WEAK_DEFINITION 
+#define _GLIBCXX_FAST_MATH 0
+#define _GLIBCXX_USE_C99_INTTYPES_TR1 1
+#define _GLIBCXX_HAVE_ATAN2F 1
+#define __INT32_C(c) c
+#define __DEC64_EPSILON__ 1E-15DD
+#define __ORDER_PDP_ENDIAN__ 3412
+#define __DEC128_MIN_EXP__ (-6142)
+#define _mm_free(a) _aligned_free(a)
+#define _CRT_MANAGED_HEAP_DEPRECATE 
+#define _GLIBCXX_SYNCHRONIZATION_HAPPENS_BEFORE(A) 
+#define LONG_MAX __LONG_MAX__
+#define __INT_FAST32_TYPE__ int
+#define _GLIBCXX_BEGIN_NAMESPACE_LDBL_OR_CXX11 _GLIBCXX_BEGIN_NAMESPACE_CXX11
+#define __MINGW_ATTRIB_NONNULL(arg) __attribute__ ((__nonnull__ (arg)))
+#define __MINGW_IMP_LSYMBOL(sym) __imp_ ##sym
+#define _GLIBCXX_USE_C99_MATH_TR1 1
+#define _GLIBCXX_USE_C99_MATH _GLIBCXX11_USE_C99_MATH
+#define __UINT_LEAST16_TYPE__ short unsigned int
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_2_ARGLIST(__ret,__func,__vfunc,__dsttype,__dst,__type1,__arg1,__type2,__arg2) 
+#define STDC_HEADERS 1
+#define __assume(x) (x)
+#define RAND_MAX 0x7fff
+#define _GLIBCXX_BEGIN_EXTERN_C extern "C" {
+#define _GLIBCXX_HAVE_STRING_H 1
+#define __INT16_MAX__ 0x7fff
+#define __UNUSED_PARAM(x) 
+#define __SIZE_TYPE__ long long unsigned int
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1) 
+#define __UINT64_MAX__ 0xffffffffffffffffULL
+#define __INT8_TYPE__ signed char
+#define _IORW 0x0080
+#define __cpp_digit_separators 201309
+#define _OLD_P_OVERLAY 2
+#define __GCC_ASM_FLAG_OUTPUTS__ 1
+#define _CRTIMP2 _CRTIMP
+#define _GLIBCXX_HAVE_MBSTATE_T 1
+#define _winver (* __MINGW_IMP_SYMBOL(_winver))
+#define _WSTDLIB_DEFINED 
+#define __ptr32 
+#define pclose _pclose
+#define __FLT_RADIX__ 2
+#define __INT_LEAST16_TYPE__ short int
+#define wpopen _wpopen
+#define __LDBL_EPSILON__ 1.08420217248550443401e-19L
+#define _GLIBCXX98_USE_C99_WCHAR 1
+#define __UINTMAX_C(c) c ## ULL
+#define _GLIBCXX_HAVE_DIRENT_H 1
+#define __GLIBCXX_BITSIZE_INT_N_0 128
+#define _alloca(x) __builtin_alloca((x))
+#define __ANONYMOUS_DEFINED 
+#define isnanf _isnanf
+#define _HEAP_MAXREQ 0xFFFFFFFFFFFFFFE0
+#define __ptr64 
+#define __SEH__ 1
+#define __SIG_ATOMIC_MAX__ 0x7fffffff
+#define _GLIBCXX_X86_RDRAND 1
+#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define _GLIBCXX_USE_DUAL_ABI 1
+#define UCHAR_MAX (SCHAR_MAX * 2 + 1)
+#define __SIZEOF_PTRDIFF_T__ 8
+#define SEEK_SET 0
+#define _ANSI_STDDEF_H 
+#define UNALIGNED __unaligned
+#define _GLIBCXX_VISIBILITY(V) _GLIBCXX_PSEUDO_VISIBILITY(V)
+#define _HEAPBADNODE (-4)
+#define NOMINMAX 1
+#define _GLIBCXX_HAVE_COSF 1
+#define _OFF_T_ 
+#define _GLIBCXX_HAVE_COSL 1
+#define _GLIBCXX_USE_FLOAT128 1
+#define _GLIBCXX_HAVE_UTIME_H 1
+#define _GLIBCXX_END_NAMESPACE_VERSION 
+#define __restrict_arr 
+#define _inline __inline
+#define _UNION_NAME(x) 
+#define _GCC_LIMITS_H_ 
+#define __x86_64__ 1
+#define _MAX_DRIVE 3
+#define __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
+#define _GLIBCXX_END_EXTERN_C }
+#define __MSVCRT__ 1
+#define __INT_FAST16_MAX__ 0x7fff
+#define _GLIBCXX_HAVE_VSWSCANF 1
+#define __CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY_0_3_(__ret,__func,__type1,__attrib1,__arg1,__type2,__attrib2,__arg2,__type3,__attrib3,__arg3) _CRTIMP __ret __cdecl __func(__type1 * __attrib1 __arg1, __type2 __attrib2 __arg2, __type3 __attrib3 __arg3) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+#define INT_MAX __INT_MAX__
+#define ULLONG_MAX 0xffffffffffffffffull
+#define _GLIBCXX_END_NAMESPACE_CXX11 }
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_4_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3,__arg4_type,__arg4) 
+#define _P_WAIT 0
+#define _TAGLC_ID_DEFINED 
+#define _GLIBCXX_NAMESPACE_LDBL 
+#define __UINT_FAST32_MAX__ 0xffffffffU
+#define __UINT_LEAST64_TYPE__ long long unsigned int
+#define __FLT_HAS_QUIET_NAN__ 1
+#define __FLT_MAX_10_EXP__ 38
+#define _GLIBCXX_HAVE_FLOORF 1
+#define _GLIBCXX_HAVE_FLOORL 1
+#define __LONG_MAX__ 0x7fffffffL
+#define __argc (* __MINGW_IMP_SYMBOL(__argc))
+#define __DEC128_SUBNORMAL_MIN__ 0.000000000000000000000000000000001E-6143DL
+#define _GLIBCXX_NORETURN __attribute__ ((__noreturn__))
+#define __FLT_HAS_INFINITY__ 1
+#define __cpp_unicode_literals 200710
+#define __UINT_FAST16_TYPE__ short unsigned int
+#define __DEC64_MAX__ 9.999999999999999E384DD
+#define _CRT_TERMINATE_DEFINED 
+#define __MINGW_EXTENSION __extension__
+#define _NSTREAM_ 512
+#define NULL __null
+#define __CHAR16_TYPE__ short unsigned int
+#define LT_OBJDIR ".libs/"
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define _GLIBCXX_HAVE_SINF 1
+#define _GLIBCXX_HAVE_SINL 1
+#define __assume_aligned(x,y) 
+#define _VA_LIST_DEFINED 
+#define __MINGW_HAVE_WIDE_C99_PRINTF 1
+#define __SEG_FS 1
+#define __INT_LEAST16_MAX__ 0x7fff
+#define INT_MIN (-INT_MAX - 1)
+#define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY 0
+#define __DEC64_MANT_DIG__ 16
+#define __argv (* __MINGW_IMP_SYMBOL(__argv))
+#define __UINT_LEAST32_MAX__ 0xffffffffU
+#define _GLIBCXX_MANGLE_SIZE_T y
+#define __SEG_GS 1
+#define __GCC_ATOMIC_LONG_LOCK_FREE 2
+#define _fgetc_nolock(_stream) (--(_stream)->_cnt >= 0 ? 0xff & *(_stream)->_ptr++ : _filbuf(_stream))
+#define __INT_LEAST64_TYPE__ long long int
+#define _GLIBCXX_HAVE_FCNTL_H 1
+#define _countof(_Array) sizeof(*__countof_helper(_Array))
+#define __min(a,b) (((a) < (b)) ? (a) : (b))
+#define __INT16_TYPE__ short int
+#define __INT_LEAST8_TYPE__ signed char
+#define _CRT_SWAB_DEFINED 
+#define _doserrno (*__doserrno())
+#define _I8_MAX 127
+#define __DEC32_MAX_EXP__ 97
+#define __INT_FAST8_MAX__ 0x7f
+#define __INTPTR_MAX__ 0x7fffffffffffffffLL
+#define _getwchar_nolock() _getwc_nolock(stdin)
+#define __cpp_sized_deallocation 201309
+#define _INC_VADEFS 
+#define _GLIBCXX_HAVE_IEEEFP_H 1
+#define __GXX_MERGED_TYPEINFO_NAMES 0
+#define __cpp_range_based_for 200907
+#define sys_nerr _sys_nerr
+#define _IOLBF 0x0040
+#define _GLIBCXX_HAVE_ISNAN 1
+#define _GLIBCXX_HAVE_LDEXPF 1
+#define __stdcall 
+#define _GLIBCXX_USE_TMPNAM 1
+#define __SSE2__ 1
+#define _crt_va_end(v) __builtin_va_end(v)
+#define __SSSE3__ 1
+#define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES 0
+#define __LDBL_MANT_DIG__ 64
+#define _OUT_TO_DEFAULT 0
+#define ASM __asm__ volatile
+#define __MINGW_GNU_SCANF(__format,__args) __attribute__((__format__(gnu_scanf, __format,__args)))
+#define _getwc_nolock(_c) _fgetwc_nolock(_c)
+#define _GLIBCXX_HAVE_INTTYPES_H 1
+#define __MINGW64_VERSION_STR __MINGW64_STRINGIFY(__MINGW64_VERSION_MAJOR) "." __MINGW64_STRINGIFY(__MINGW64_VERSION_MINOR)
+#define __DBL_HAS_QUIET_NAN__ 1
+#define _GLIBCXX_CSTDLIB 1
+#define _CALL_REPORTFAULT 0x2
+#define __GNUC_VA_LIST 
+#define _GCC_MAX_ALIGN_T 
+#define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+#define _MALLOC_H_ 
+#define FILENAME_MAX 260
+#define _CRT_ATOF_DEFINED 
+#define __cpp_return_type_deduction 201304
+#define _WRITE_ABORT_MSG 0x1
+#define __INTPTR_TYPE__ long long int
+#define __UINT16_TYPE__ short unsigned int
+#define __WCHAR_TYPE__ short unsigned int
+#define __SIZEOF_FLOAT__ 4
+#define _GLIBCXX_PACKAGE_TARNAME "libstdc++"
+#define _INC_STDDEF 
+#define _UI16_MAX 0xffffu
+#define _ARGMAX 100
+#define __pic__ 1
+#define __MINGW_USYMBOL(sym) sym
+#define __UINTPTR_MAX__ 0xffffffffffffffffULL
+#define __DEC64_MIN_EXP__ (-382)
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_SPLITPATH(__ret,__func,__dsttype,__src) 
+#define __cpp_decltype 200707
+#define _GLIBCXX_USE_C99 1
+#define _GLIBCXX_HAVE_WCSTOF 1
+#define _GLIBCXX_DEFAULT_ABI_TAG _GLIBCXX_ABI_TAG_CXX11
+#define __uintptr_t_defined 
+#define _FREEA_INLINE 
+#define __INT_FAST64_MAX__ 0x7fffffffffffffffLL
+#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+#define __forceinline inline __attribute__((__always_inline__))
+#define BUFSIZ 512
+#define __FLT_DIG__ 6
+#define _malloca(size) ((((size) + _ALLOCA_S_MARKER_SIZE) <= _ALLOCA_S_THRESHOLD) ? _MarkAllocaS(_alloca((size) + _ALLOCA_S_MARKER_SIZE),_ALLOCA_S_STACK_MARKER) : _MarkAllocaS(malloc((size) + _ALLOCA_S_MARKER_SIZE),_ALLOCA_S_HEAP_MARKER))
+#define _GLIBCXX_CONSTEXPR constexpr
+#define _GLIBCXX_USE_WCHAR_T 1
+#define __UINT_FAST64_TYPE__ long long unsigned int
+#define _GLIBCXX_HAVE_WCTYPE_H 1
+#define _GLIBCXX_HAVE_STRTOF 1
+#define STDIN_FILENO 0
+#define _GLIBCXX_HAVE_MEMORY_H 1
+#define __INT_MAX__ 0x7fffffff
+#define __amd64__ 1
+#define _GLIBCXX_HAVE_INT64_T_LONG_LONG 1
+#define MINGW_DDRAW_VERSION 7
+#define WIN32 1
+#define UINT_MAX (INT_MAX * 2U + 1U)
+#define _P_OVERLAY 2
+#define _CRT_ALGO_DEFINED 
+#define LLONG_MAX 9223372036854775807ll
+#define __CRT_UUID_DECL(type,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) extern "C++" { template<> inline const GUID &__mingw_uuidof<type>() { static const IID __uuid_inst = {l,w1,w2, {b1,b2,b3,b4,b5,b6,b7,b8}}; return __uuid_inst; } template<> inline const GUID &__mingw_uuidof<type*>() { return __mingw_uuidof<type>(); } }
+#define __code_model_medium__ 1
+#define _TWO_DIGIT_EXPONENT 0x1
+#define _STRUCT_NAME(x) 
+#define __INT64_TYPE__ long long int
+#define SYS_OPEN _SYS_OPEN
+#define __FLT_MAX_EXP__ 128
+#define _GLIBCXX_THREAD_ATEXIT_WIN32 1
+#define __GNU_EXTENSION __MINGW_EXTENSION
+#define WIN64 1
+#define __ORDER_BIG_ENDIAN__ 4321
+#define __DBL_MANT_DIG__ 53
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_1_1(__ret,__func,__type0,__arg0,__dsttype,__dst,__type1,__arg1) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_1_2(__ret,__func,__type0,__arg0,__dsttype,__dst,__type1,__arg1,__type2,__arg2) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_1_3(__ret,__func,__type0,__arg0,__dsttype,__dst,__type1,__arg1,__type2,__arg2,__type3,__arg3) 
+#define _crt_va_start(v,l) __builtin_va_start(v,l)
+#define __cpp_inheriting_constructors 200802
+#define _GLIBCXX_HAVE_FENV_H 1
+#define _GLIBCXX_HAVE_STDBOOL_H 1
+#define __SIZEOF_FLOAT128__ 16
+#define __INT_LEAST64_MAX__ 0x7fffffffffffffffLL
+#define _STDSTREAM_DEFINED 
+#define _IOWRT 0x0002
+#define __DEC64_MIN__ 1E-383DD
+#define __WINT_TYPE__ short unsigned int
+#define __UINT_LEAST32_TYPE__ unsigned int
+#define MB_LEN_MAX 5
+#define __SIZEOF_SHORT__ 2
+#define STDOUT_FILENO 1
+#define __SSE__ 1
+#define _FILE_OFFSET_BITS_SET_FTELLO 
+#define __intptr_t_defined 
+#define __LDBL_MIN_EXP__ (-16381)
+#define _GLIBCXX_HAVE_LOGF 1
+#define _GLIBCXX_HAVE_LOGL 1
+#define _CRT_STRINGIZE(_Value) __CRT_STRINGIZE(_Value)
+#define _GLIBCXX_HAVE_EXPF 1
+#define _GLIBCXX_HAVE_EXPL 1
+#define __MINGW_ATTRIB_DEPRECATED_STR(X) 
+#define _HEAPINFO_DEFINED 
+#define __MINGW_PRAGMA_PARAM(x) _Pragma (#x)
+#define stdout (&__iob_func()[1])
+#define _GLIBCXX_TXN_SAFE 
+#define MINGW_SDK_INIT 
+#define __INT_LEAST8_MAX__ 0x7f
+#define __MINGW_MSC_PREREQ(major,minor) 0
+#define __crt_typefix(ctype) 
+#define LLONG_MIN (-9223372036854775807ll - 1)
+#define _GLIBCXX_HAVE_LOG10F 1
+#define _GLIBCXX_HAVE_LOG10L 1
+#define __MINGW_IMP_SYMBOL(sym) __imp_ ##sym
+#define __SIZEOF_INT128__ 16
+#define _wP_tmpdir L"\\"
+#define __WCHAR_UNSIGNED__ 1
+#define __LDBL_MAX_10_EXP__ 4932
+#define _GLIBCXX_HAVE_DOS_BASED_FILESYSTEM 1
+#define __ATOMIC_RELAXED 0
+#define __DBL_EPSILON__ double(2.22044604925031308085e-16L)
+#define __GTHREAD_HIDE_WIN32API 1
+#define __thiscall __attribute__((__thiscall__))
+#define _I32_MAX 2147483647
+#define _CRTRESTRICT 
+#define __UINT8_C(c) c
+#define _GLIBCXX_HAVE_CEILF 1
+#define _GLIBCXX_HAVE_CEILL 1
+#define __INT_LEAST32_TYPE__ int
+#define _NLSCMPERROR 2147483647
+#define SEEK_END 2
+#define __SIZEOF_WCHAR_T__ 2
+#define _GLIBCXX_NOTHROW _GLIBCXX_USE_NOEXCEPT
+#define __UINT64_TYPE__ long long unsigned int
+#define _GLIBCXX_USE_C99_WCHAR _GLIBCXX11_USE_C99_WCHAR
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_1_ARGLIST(__ret,__func,__vfunc,__dsttype,__dst,__type1,__arg1) 
+#define _GLIBCXX_HAVE_UNISTD_H 1
+#define __MINGW32_MAJOR_VERSION 3
+#define _GLIBCXX_USE_C99_STDINT_TR1 1
+#define _STDDEF_H_ 
+#define _GLIBCXX_HAVE_FPCLASS 1
+#define _PTRDIFF_T_DEFINED 
+#define _ANONYMOUS_UNION __MINGW_EXTENSION
+#define MB_CUR_MAX ___mb_cur_max_func()
+#define _MAX_FNAME 256
+#define __INT_FAST8_TYPE__ signed char
+#define _getchar_nolock() _getc_nolock(stdin)
+#define __fastcall __attribute__((__fastcall__))
+#define __MINGW_GNUC_PREREQ(major,minor) (__GNUC__ > (major) || (__GNUC__ == (major) && __GNUC_MINOR__ >= (minor)))
+#define _GLIBCXX_HAVE_TANF 1
+#define _IOEOF 0x0010
+#define _GLIBCXX_HAVE_STDLIB_H 1
+#define _I32_MIN (-2147483647 - 1)
+#define _GLIBCXX_HAVE_USLEEP 1
+#define __GNUC_STDC_INLINE__ 1
+#define _THREADLOCALEINFO 
+#define P_tmpdir _P_tmpdir
+#define _FILE_OFFSET_BITS_SET_OFFT 
+#define _GLIBCXX_DEPRECATED __attribute__ ((__deprecated__))
+#define __STRINGIFY(x) #x
+#define __DBL_DECIMAL_DIG__ 17
+#define __STDC_UTF_32__ 1
+#define __unaligned 
+#define __MINGW_PRINTF_FORMAT ms_printf
+#define _IOERR 0x0020
+#define __FXSR__ 1
+#define __DEC_EVAL_METHOD__ 2
+#define FOPEN_MAX 20
+#define __CRT_STRINGIZE(_Value) #_Value
+#define __MINGW64__ 1
+#define _GLIBCXX_HAVE_LDEXPL 1
+#define _CRT_PACKING 8
+#define _TRUNCATE ((size_t)-1)
+#define environ _environ
+#define _GLIBCXX_LLP64 1
+#define _WAIT_CHILD 0
+#define __cpp_runtime_arrays 198712
+#define _USEDENTRY 1
+#define __UINT32_C(c) c ## U
+#define _CRT_SECURE_CPP_NOTHROW throw()
+#define __INTMAX_MAX__ 0x7fffffffffffffffLL
+#define __cpp_alias_templates 200704
+#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define WINNT 1
+#define __FLT_DENORM_MIN__ 1.40129846432481707092e-45F
+#define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT 0
+#define _GLIBCXX_HAVE_FINITE 1
+#define MINGW_HAS_DDRAW_H 1
+#define __INT8_MAX__ 0x7f
+#define __PIC__ 1
+#define _WAIT_GRANDCHILD 1
+#define _GLIBCXX_HAVE_EOVERFLOW 1
+#define _CRT_SYSTEM_DEFINED 
+#define __UINT_FAST32_TYPE__ unsigned int
+#define __MINGW_NOTHROW __attribute__ ((__nothrow__))
+#define __CHAR32_TYPE__ unsigned int
+#define __MINGW_MBWC_CONVERT_DEFINED 
+#define _GTHREAD_USE_MUTEX_INIT_FUNC 1
+#define __FLT_MAX__ 3.40282346638528859812e+38F
+#define _GLIBCXX_HAVE_VFWSCANF 1
+#define _GLIBCXX_USE_ALLOCATOR_NEW 1
+#define INLINE __attribute__((always_inline))
+#define _OFF64_T_DEFINED 
+#define __cpp_constexpr 201304
+#define __int8 char
+#define _winminor (* __MINGW_IMP_SYMBOL(_winminor))
+#define _GLIBCXX98_USE_C99_STDIO 1
+#define X64 
+#define wcswcs wcsstr
+#define _GLIBCXX_HAVE_SYS_TYPES_H 1
+#define __INT32_TYPE__ int
+#define _CRT_WIDE(_String) __CRT_WIDE(_String)
+#define __SIZEOF_DOUBLE__ 8
+#define __MINGW_ATTRIB_PURE __attribute__ ((__pure__))
+#define _MAX_DIR 256
+#define __INTMAX_TYPE__ long long int
+#define _GLIBCXX11_USE_C99_MATH 1
+#define _OUT_TO_STDERR 1
+#define _MT 
+#define _INTEGRAL_MAX_BITS 64
+#define __MINGW_ATTRIB_NORETURN __attribute__ ((__noreturn__))
+#define __DEC128_MAX_EXP__ 6145
+#define _CRTIMP_PURE _CRTIMP
+#define _GLIBCXX_NO_IOCTL 1
+#define _GLIBCXX_HAVE_ACOSF 1
+#define _GLIBCXX_HAVE_ACOSL 1
+#define __MINGW64_VERSION_STATE "alpha"
+#define __ATOMIC_CONSUME 1
+#define __GNUC_MINOR__ 0
+#define __GLIBCXX_TYPE_INT_N_0 __int128
+#define __UINTMAX_MAX__ 0xffffffffffffffffULL
+#define __DEC32_MANT_DIG__ 7
+#define __DECLSPEC_SUPPORTED 
+#define _GTHREAD_USE_MUTEX_TIMEDLOCK 1
+#define __DBL_MAX_10_EXP__ 308
+#define __LDBL_DENORM_MIN__ 3.64519953188247460253e-4951L
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2) 
+#define __INT16_C(c) c
+#define __cpp_generic_lambdas 201304
+#define __STDC__ 1
+#define _GLIBCXX_HAVE_VWSCANF 1
+#define __CRTDECL __cdecl
+#define __MINGW_POISON_NAME(__IFACE) __IFACE ##_layout_has_not_been_verified_and_its_declaration_is_most_likely_incorrect
+#define __MINGW_HAVE_ANSI_C99_PRINTF 1
+#define _GLIBCXX_USE_C99_CTYPE_TR1 1
+#define __PTRDIFF_TYPE__ long long int
+#define _GLIBCXX_END_NAMESPACE_CONTAINER 
+#define errno (*_errno())
+#define _INC_STDLIB 
+#define _winmajor (* __MINGW_IMP_SYMBOL(_winmajor))
+#define _GLIBCXX_NOEXCEPT_IF(_COND) noexcept(_COND)
+#define _GLIBCXX_BEGIN_NAMESPACE_LDBL 
+#define _PTR_LD(x) ((unsigned char *)(&(x)->ld))
+#define __ATOMIC_SEQ_CST 5
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1
+#define _GLIBCXX_HAVE__FINITEF 1
+#define __UINT32_TYPE__ unsigned int
+#define _I64_MAX 9223372036854775807ll
+#define __C89_NAMELESSUNIONNAME 
+#define __UINTPTR_TYPE__ long long unsigned int
+#define _GLIBCXX_INLINE_VERSION 0
+#define _fputc_nolock(_c,_stream) (--(_stream)->_cnt >= 0 ? 0xff & (*(_stream)->_ptr++ = (char)(_c)) : _flsbuf((_c),(_stream)))
+#define __DEC64_SUBNORMAL_MIN__ 0.000000000000001E-383DD
+#define __DEC128_MANT_DIG__ 34
+#define __LDBL_MIN_10_EXP__ (-4931)
+#define _GLIBCXX_THROW_OR_ABORT(_EXC) (__builtin_abort())
+#define __SSE_MATH__ 1
+#define __core2 1
+#define __USE_MINGW_STRTOX 1
+#define finitef _finitef
+#define __SIZEOF_LONG_LONG__ 8
+#define _GLIBCXX_VERBOSE 1
+#define _GLIBCXX_HAVE_ASINF 1
+#define __cpp_user_defined_literals 200809
+#define _GLIBCXX_HAVE_ASINL 1
+#define _CRT_DIRECTORY_DEFINED 
+#define DUMMYSTRUCTNAME 
+#define __GCC_ATOMIC_LLONG_LOCK_FREE 2
+#define __MINGW64_VERSION_MINOR 0
+#define __LDBL_DIG__ 18
+#define __MINGW_ATTRIB_DEPRECATED __attribute__ ((__deprecated__))
+#define __FLT_DECIMAL_DIG__ 9
+#define __UINT_FAST16_MAX__ 0xffff
+#define _GLIBCXX_NOEXCEPT noexcept
+#define _ERRCODE_DEFINED 
+#define __GCC_ATOMIC_SHORT_LOCK_FREE 2
+#define _P_DETACH 4
+#define _GLIBCXX11_USE_C99_WCHAR 1
+#define _SPAWNV_DEFINED 
+#define _GLIBCXX_HAVE_ECHILD 1
+#define __USE_MINGW_ANSI_STDIO 1
+#define __SSE3__ 1
+#define __UINT_FAST8_TYPE__ unsigned char
+#define __WIN64__ 1
+#define _I64_MIN (-9223372036854775807ll - 1)
+#define __N(msgid) (msgid)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_3(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_3_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2, __arg3_type, __arg3)
+#define ALIGN(n) __attribute__((aligned(n)))
+#define _TIME32_T_DEFINED 
+#define __cpp_init_captures 201304
+#define __ATOMIC_ACQ_REL 4
+#define __ATOMIC_RELEASE 3
+#define _FREEENTRY 0
+#define _FILE_OFFSET_BITS_SET_FSEEKO 
+#define _GLIBCXX_USE_INT128 1
+#define __declspec(x) __attribute__((x))
+#define _M_AMD64 100
+#define _GLIBCXX_PACKAGE_STRING "package-unused version-unused"
