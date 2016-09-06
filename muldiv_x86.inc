@@ -1,4 +1,6 @@
 
+#pragma message "Using x86 workaround for int64*int64/int64 operations"
+
 qword multdiv( qword a, qword b, qword c ) {
   const qword base = 1ULL<<32;
   const qword maxdiv = (base-1)*base + (base-1);
@@ -120,6 +122,9 @@ qword muldivR( qword a, qword b, qword range ) {
 qword mulRdiv( qword a, qword c, qword range ) { 
   qword r;
   range++;
+
+  if( a==c ) r=range; else
+
   if( range==0 ) {
     // a*(b-c)/c+a = a*b/c
     r = multdiv( a, -c, c ) + a;

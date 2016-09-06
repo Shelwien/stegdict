@@ -1,6 +1,7 @@
 
 #if (defined __GNUC__) || (!defined X64)
   #ifdef X64
+  #pragma message "Using __int128 type for int64*int64/int64 operations"
   // if __int128 available, just use it
   typedef unsigned __int128 hword;
   static qword muldivR( qword a, qword b, qword range ) { return (hword(a)*b)/(hword(range)+1); }
@@ -12,6 +13,7 @@
 #else
   #ifdef X64
   // if __int128 isn't available, use x64 asm
+//  #include "muldiv_x86.inc"
   #include "muldiv_x64_asm.inc"
   #else
   #endif
@@ -46,7 +48,7 @@ struct Rangecoder_SH1m128 : Coroutine {
 
 
   void rc_Process( qword cumFreq, qword freq, qword totFreq ) {
-    qword tmp = mulRdiv(cumFreq,totFreq,range) + 1;
+    qword tmp = mulRdiv(cumFreq,totFreq,range); // + 1;
     if( rc_ProcMode ) code-=tmp; else {
       //lowc+=tmp;
       qword old=low; low+=tmp; if( low<old ) Carry++;
@@ -54,7 +56,7 @@ struct Rangecoder_SH1m128 : Coroutine {
     range = mulRdiv(cumFreq+freq,totFreq,range)-1 - tmp;
     if( rc_ProcMode ) 
       while( range<sTOP ) {
-        range = (range<<8)+0xFF;
+        range = (range<<8)+0xFF; // (range+1)*256-1=range*256+255
         uint c=get(); FFNum += (c==-1);
         (code<<=8)+=byte(c);
       }
@@ -66,7 +68,9 @@ struct Rangecoder_SH1m128 : Coroutine {
   void rc_Arrange( qword totFreq ) {}
 
   qword rc_GetFreq( qword totFreq ) {
-    return muldivR(code,totFreq,range);
+    qword r = muldivR(code,totFreq,range);
+    //printf( "GetFreq: %I64X\n", r );
+    return r;
   }
 
 
@@ -130,6 +134,10 @@ struct Rangecoder_SH1m128 : Coroutine {
 //printf( "Carry=%I64X\n", Carry );
 //printf( "%02X %i %016I64X\n", Cache+Carry, FFNum+Carry, low );
 //printf( "%02X %i %016I64X\n", Cache+High, FFNum+High, high );
+
+      // write one byte less if possible, last byte is usually partial anyway
+      if( (n==0) ) if( FFNum==0 ) Cache=-1; else FFNum--;
+      if( n>0 ) n--;
 
       if( Cache!=-1 ) put( Cache+Carry );
       for( i=0; i<FFNum; i++ ) put( 0xFF+Carry );
