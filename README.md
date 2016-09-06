@@ -30,4 +30,4 @@ config2:
 > \#16:input.bin sorted.bin  
 >      input2.bin sorted2.bin  
  
-Contacts: shelwien.san@gmail.com
+Contacts: shelwien@gmail.com
