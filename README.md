@@ -1,5 +1,6 @@
 # stegdict
-Steganography based on permutations of sorted dictionary
+Steganography based on permutations of sorted dictionary  
+http://encode.ru/threads/2597-Steganography-based-on-dictionary-permutations
 
 The main idea is that dictionary file compression is a big problem for any fast codecs.
 So here's a workaround - if we cannot take care of some correlations in the data,
