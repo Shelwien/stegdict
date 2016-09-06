@@ -12,15 +12,19 @@ To compile:
 To use: 
 > Encode: stegdict c input_dict output_dict payload  
 > Decode: stegdict d input_dict sorted_dict payload.unp
+
 For fixed-size records:  
 > Encode: stegdict c16 input_dict output_dict payload  
 > Decode: stegdict d16 input_dict sorted_dict payload.unp
+
 For config file  
 > Encode: stegdict c @config1 payload  
 > Decode: stegdict d @config2 payload.unp  
+
 config1:  
-\#16:input_dict output_dict  
+> \#16:input_dict output_dict  
+
 config2:  
-\#16:input_dict sorted_dict  
+> \#16:input_dict sorted_dict  
  
 Contacts: shelwien.san@gmail.com
