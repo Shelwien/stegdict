@@ -4,7 +4,8 @@ Steganography based on permutations of sorted dictionary
 The main idea is that dictionary file compression is a big problem for any fast codecs.
 So here's a workaround - if we cannot take care of some correlations in the data,
 let's randomize them instead via steganography, and get better overall compression as a result.
-Its the same idea that I proposed for jpeg/mp3 in http://encode.ru/threads/1405-Stegan...-lossy-formats
+Its the same idea that I proposed for jpeg/mp3 in  
+http://encode.ru/threads/1405-Steganography-for-universal-recompression-of-lossy-formats
 
 To compile: 
 > g++ -O3 -s stegdict.cpp -ILib -o stegdict
