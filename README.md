@@ -21,7 +21,7 @@ Also there're samples in http://nishi.dreamhosters.com/u/fplog_demo_0.rar*
 
 Example:  
 > stegdict c LICENSE license_mut README.md  
-> stegdict d license_mut license_sort payload
+> stegdict d license_mut license_sort payload  
 *Payload size should be 535 bytes*
   
 For fixed-size records:  
