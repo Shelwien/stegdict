@@ -19,6 +19,11 @@ To use:
 (There're only windows executables, but sample files are universal).
 Also there're samples in http://nishi.dreamhosters.com/u/fplog_demo_0.rar*
 
+Example:  
+> stegdict c LICENSE license_mut README.md  
+> stegdict d license_mut license_sort payload
+*Payload size should be 535 bytes*
+  
 For fixed-size records:  
 > Encode: stegdict c16 input.bin output.bin payload  
 > Decode: stegdict d16 input.bin sorted.bin payload.unp

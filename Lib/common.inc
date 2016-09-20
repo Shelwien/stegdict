@@ -39,8 +39,8 @@ template<byte a,byte b,byte c,byte d> struct wc {
  #define INLINE   __attribute__((always_inline)) 
  #define NOINLINE __attribute__((noinline))
  #define ALIGN(n) __attribute__((aligned(n)))
-// #define __assume_aligned(x,y) x=(byte*)__builtin_assume_aligned((void*)x,y)
- #define __assume_aligned(x,y) 
+ #define __assume_aligned(x,y) x=(byte*)__builtin_assume_aligned((void*)x,y)
+// #define __assume_aligned(x,y) (x=decltype(x)(__builtin_assume_aligned((void*)x,y)))
  #define restrict __restrict
 #else
  #define INLINE   __forceinline
@@ -50,7 +50,14 @@ template<byte a,byte b,byte c,byte d> struct wc {
 
 #if defined(_MSC_VER) && !defined(__INTEL_COMPILER)
  #define __builtin_expect(x,y) (x)
- #define __assume_aligned(x,y) 
+// #define __assume_aligned(x,y) 
+ #define __assume_aligned(x,y) __assume( (((byte*)x)-((byte*)0))%(y)==0 )
+ #define restrict __restrict
+ //#include "intrin.h"
+ extern "C" {
+ byte __cdecl _BitScanForward( uint* _Index, uint _Mask);
+ byte __cdecl _BitScanForward64( uint* _Index, qword _Mask );
+ }
 #endif
 
 #if !defined(_MSC_VER) && !defined(__INTEL_COMPILER)
