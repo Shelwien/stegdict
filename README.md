@@ -15,6 +15,10 @@ To use:
 > Encode: stegdict c input_dict output_dict payload  
 > Decode: stegdict d input_dict sorted_dict payload.unp
 
+**Sample files can be taken from release archives - https://github.com/Shelwien/stegdict/releases  
+(There're only windows executables, but sample files are universal).
+Also there're samples in http://nishi.dreamhosters.com/u/fplog_demo_0.rar**
+
 For fixed-size records:  
 > Encode: stegdict c16 input.bin output.bin payload  
 > Decode: stegdict d16 input.bin sorted.bin payload.unp
