@@ -112,7 +112,7 @@ struct Rangecoder_SH1m128 : Coroutine {
 
   void rc_Quit( void ) {
     if( rc_ProcMode==0 ) {
-      uint i, n = NUM;
+      uint i, n = NUM+1;
 
       // cache .. FF x FFNum .. low
       qword high=low+range,High=(high<low),tmp=high; high++; High|=(high<tmp);
